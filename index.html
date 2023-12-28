@@ -129,8 +129,8 @@
             </div>
             <form action="">
                 <div id="paso-1">
-                    <label for="cliente">¿Cuál es tu nombre?</label>
-                    <input id="cliente" type="text" placeholder="Indica tu nombre" minlength="5" maxlength="25"/>
+                    <label for="nombre">¿Cuál es tu nombre?</label>
+                    <input id="nombre" type="text" placeholder="Indica tu nombre" minlength="5" maxlength="25"/>
                 </div>
                 <div id="paso-2" style="display: none;">
                     <label for="fecha">Indica la fecha de tu reserva</label>
@@ -158,15 +158,18 @@
                     <h2>Resumen</h2>
                     <ul>
                         <li id="resumen-nombre">Nombre: </li>
-                        <!-- <li id="resumen-fecha">Fecha: </li>
-                        <li id="resumen-hora">Hora: </li> -->
+                        <li id="resumen-fecha">Fecha: </li>
+                        <li id="resumen-hora">Hora: </li>
                         <li id="resumen-servicio">Servicio: </li>
                         <li id="resumen-telefono">Telefono: </li>
                     </ul>
                 </div>
                 <div>
                     <button id="btn-siguiente">Siguiente</button>
+
+                    <input type="button" value="Finalizar" onclick="location.reload()">
                 </div>
+
             </form>
             <br><br>
             <h4>Mi ubicación:</h4>

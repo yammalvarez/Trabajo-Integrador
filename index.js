@@ -40,25 +40,8 @@ function prepararResumen() {
     const resumenTelefono = document.getElementById("resumen-telefono");
 
     resumenNombre.innerText = "Nombre: " + document.getElementById("nombre").value;
-    resumenFecha.innerText = "Fecha: " + document.getElementById("String: "+fecha.toString()).value;
+    resumenFecha.innerText = "Fecha: " + document.getElementById("fecha").value;
     resumenHora.innerText = "Hora: " + document.getElementById("hora").value;
     resumenServicio.innerText = "Servicio: " + document.getElementById("servicio").value;
     resumenTelefono.innerText = "Telefono: " + document.getElementById("telefono").value;
 }
-/*document.getElementById('filtrar').addEventListener('click', function(){
-    let nombreAFiltrar = document.getElementById('filtro-nombre').value;
-    let todosLosTrs = document.querySelectorAll('tr');
-    todosLosTrs.forEach((unTr) => {
-     let trValido = false
-     let children = unTr.children;
-     for(let i= 0; i < children.length; i ++){
-        let elemento = children[i];
-        if(elemento.innerText == nombreAFiltrar){
-             trValido = true
-         }
-        }
-        if(! trValido){
-            unTr.style.display = 'none';
-        }
-    })
-})*/
